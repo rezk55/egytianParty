@@ -1,0 +1,191 @@
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",
+                sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 100vh;
+    background-image: url('../imgs/events-heavenly-header.jpeg');
+    background-size: cover;
+    background-position:center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 0, 0, 0.521);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: #111111;
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    padding-top: 30px;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition: transform 0.4s;
+    -webkit-transition: transform 0.4s;
+    -moz-transition: transform 0.4s;
+    -ms-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
+}
+
+nav li {
+    padding: 20px 0;
+}
+
+nav a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.4s;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
+}
+
+nav .close {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #AF1A19;
+}
+
+nav .btn-menu {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(100%,-50%);
+    -webkit-transform: translate(100%,-50%);
+    -moz-transform: translate(100%,-50%);
+    -ms-transform: translate(100%,-50%);
+    -o-transform: translate(100%,-50%);
+}
+
+/* singer  */
+.singer button {
+    font-size: 2rem;
+    background-color: #e68285;
+    color: #fff;
+    border: none;
+    padding: 5px 0;
+}
+
+.singer p {
+    display: none;
+    text-align: center;
+    background-color: #CCCCCC;
+    margin: 0;
+}
+
+/* time */
+.time {
+    height: 50vh;
+    background:linear-gradient(rgba(175, 25, 25, 0.5), rgba(175, 25, 25, 0.5)), url("../imgs/invitation-2508607__340.jpeg");
+    background-repeat: no-repeat;
+}
+
+/* contact us */
+
+.links li a {
+    color: inherit;
+    box-shadow: 0 0 0 1px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.links li a:hover {
+    background-color: #AF1A19;
+    color: #fff;
+}
+
+.form-control:focus {
+    box-shadow: 1px 1px 7px 1px inset #AF1A19;
+}
+
+
+.btn-messag {
+    background-color: #AF1A19;
+    color: #fff;
+    padding: 8px 20px;
+}
+
+.btn-messag:hover {
+    background-color: #AF1A19;
+    color: #fff;
+}
+
+@media (max-width:992px){
+    nav {
+        width: 50%;
+    }
+}
+
+@media (max-width:576px){
+    .overlay .caption h1 {
+        font-size: 1.5rem;
+    }
+    .overlay .caption p {
+        font-size: 1rem;
+    }
+
+    nav {
+        width: 50%;
+    }
+    nav .btn-menu span {
+        display: none;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+}
