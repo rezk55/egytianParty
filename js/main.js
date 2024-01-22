@@ -14,16 +14,29 @@ $(document).ready(function(){
         });
     })
 
-    
-    // $(window).on('scroll',function(){
-    //     let scroll = $(window).scrollTop();
-
-    // })
+    let sectionOffsetDur = $('#duration').offset().top - 50;     
+    let sectionOffsetCon = $('#contact').offset().top - 50;     
+    let sectionOffsetDet = $('#details').offset().top - 50;     
+    $(window).on('scroll',function(){
+        let scroll = $(window).scrollTop();
+        if(scroll > sectionOffsetCon - 300 || (scroll > sectionOffsetDur-300 )&& (scroll<sectionOffsetDet-270) ){
+            $('nav .btn-menu ').css({
+                "color":"#AF1A19"
+            })
+        }
+        else {
+            $('nav .btn-menu ').css({
+                "color":"#fff"
+            })
+        }
+    })
 
     $(".menu a").on("click",function(){
         let aHref = $(this).attr('href');
-        let sectionOffset = $(aHref).offset().top; 
-        $('html','body').animate({scrollTop:sectionOffset},2000);
+        let sectionOffset = $(aHref).offset().top - 50; 
+        $('html, body').animate({
+            scrollTop: sectionOffset
+         }, 500);
 
     })
 

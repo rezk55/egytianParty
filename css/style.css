@@ -100,6 +100,11 @@ nav .btn-menu {
     -moz-transform: translate(100%,-50%);
     -ms-transform: translate(100%,-50%);
     -o-transform: translate(100%,-50%);
+    transition: color 0.4s;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
 }
 
 /* singer  */
